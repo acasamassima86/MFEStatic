@@ -1,0 +1,27 @@
+<h1>Films available for rent</h1>
+<table>
+  <thead>
+    <tr>
+      <th>
+        Title
+      </th>
+      <th>
+        Original Title
+      </th>
+      <th>
+        Publication Year
+      </th>
+      <th>
+        Length (min.)
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td>{{item.Title}}</td>
+      <td>{{item.OriginalTitle}}</td>
+      <td>{{item.PublishingYear}}</td>
+      <td>{{item.Length}}</td>
+    </tr>    
+  </tbody>
+</table>
